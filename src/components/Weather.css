@@ -1,6 +1,4 @@
-body{
-    background-color: cornflowerblue;
-}
+
 .location,
 .temp,
 .temp_range,
@@ -15,7 +13,7 @@ body{
 #icon {
     display: block;
     margin: 0px auto;
-    width: 7%;
+    width: 15%;
 }
 
 .recent_weather{
