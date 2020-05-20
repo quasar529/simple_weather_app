@@ -17,17 +17,12 @@ class App extends React.Component{
   getWeather= async () =>{
     const {data}=await axios.get("http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=20dd54e163bbd3575a7ed6ddb7994735");
     this.setState({data, isLoading:false});
-    //console.log("get", data);
   };
   componentDidMount(props){
-    //console.log("mount");
     this.getWeather();
   };
   render() {
     const {data,isLoading}=this.state;
-    //{data.main.temp}={data.main.temp}-273;
-    //data.main.temp_max=data.main.temp_max-273;
-    //data.main.temp_min=data.main.temp_min-273;
     return (
       isLoading ? (<div className="loader"><span>Loading...</span></div>) :
       <div className="data">
@@ -37,6 +32,9 @@ class App extends React.Component{
           temp_min={data.main.temp_min}
           recentWeather={data.weather[0].main}
           humidity={data.main.humidity}
+          description={data.weather[0].description}
+          icon={data.weather[0].icon}
+          name={data.name}
         /> 
       </div>
       );
