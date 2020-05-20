@@ -1,3 +1,7 @@
-Weather App
+Simple Weather App
 
-using openweathermap API
+using openWeatherMap API (Current Weather)
+
+language: Javascript
+tool: VScode
+library: ReactJS
