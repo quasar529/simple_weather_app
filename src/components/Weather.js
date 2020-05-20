@@ -2,7 +2,7 @@ import React from "react"
 import "./Weather.css"
 import PropTypes from 'prop-types';
 function Weather({temp,temp_max,temp_min,recentWeather,humidity,description,icon,name}){
-    var iconcode= "http://openweathermap.org/img/w/"+icon+".png";
+    var iconcode= "https://openweathermap.org/img/w/"+icon+".png";
     const wicon=recentWeather;
     console.log(wicon);
     switch (wicon){
