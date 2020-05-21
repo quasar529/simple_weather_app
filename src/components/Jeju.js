@@ -13,7 +13,7 @@ class Jeju extends React.Component{
   }
 
   getWeather= async () =>{
-    const {data}=await axios.get("https://api.openweathermap.org/data/2.5/weather?q=jeju&appid=20dd54e163bbd3575a7ed6ddb7994735/");
+    const {data}=await axios.get("https://api.openweathermap.org/data/2.5/weather?q=jeju&appid=20dd54e163bbd3575a7ed6ddb7994735");
     this.setState({data, isLoading:false});
   };
   componentDidMount(props){
