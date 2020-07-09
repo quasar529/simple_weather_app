@@ -1,31 +1,32 @@
-
 .location,
 .temp,
 .temp_range,
 .humidity,
-.recent_weather{
-    color: white;
-    text-align: center;
-    font-style:-apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    font-weight: 500;
+.recent_weather {
+  text-align: center;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 2rem;
 }
 #icon {
-    display: block;
-    margin: 0px auto;
-    width: 15%;
+  display: block;
+  margin: 0px auto;
+  width: 20%;
 }
-
-.recent_weather{
-    margin-top: 50px;
+.info {
+  opacity: 0.5;
 }
-.humidity{
-    margin-top: 50px;
+.recent_weather {
+  margin-top: 50px;
 }
-.temp{
-    display: block;
-    margin-top: 50px;
+.humidity {
+  margin-top: 50px;
 }
-.location{
-    font-family:cursive;
+.temp {
+  display: block;
+  margin-top: 50px;
+}
+.location {
+  font-family: "Montserrat", sans-serif;
+  margin: 5vh 0;
+  font-size: 3.5rem;
 }
